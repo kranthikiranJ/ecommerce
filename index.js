@@ -17,6 +17,7 @@ function discountPercentage(p,c){
 
 function selectCategory(categoryName){
     const prodContainer = document.getElementById('productContainer')
+
     prodContainer.innerHTML = ""
     categoryList().then((categories)=> {
         const selectedCategory = categories.find((category)=>category.category_name===categoryName)
